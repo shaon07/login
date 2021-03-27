@@ -1,0 +1,102 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: linear-gradient( 90deg, #845ef7,#c92a2a);
+	/*animation: anim 1s linear infinite;*/
+}
+@keyframes anim
+{
+	0%{
+		transform: rotate(90deg);
+	}
+	50%
+	{
+		transform: rotate(180deg)
+	}
+	75%
+	{
+		transform: rotate(270deg);
+	}
+	100%{
+		transform: rotate(360deg)
+	}
+}
+.mainDiv
+{
+	width: 500px;
+	padding: 20px;
+	background: white;
+	text-align: center;
+	margin: 5vh auto;
+	overflow: hidden;
+	padding: 60px 0;
+	/*position: absolute;*/
+}
+.textfile
+{
+	display: inline-block !important;
+	font-family: system-ui;
+	padding: 5px;
+}
+.fullname
+{
+	display: inline-block !important;
+	text-align: center;
+	margin: 10px;
+	border: none;
+    padding: 15px;
+    border-radius: 5px;
+    background: #eaeaea;
+}
+.divider
+{
+	height: 2px;
+	color: red;
+	background: red;
+	margin: 5px;
+}
+.formFill
+{
+	/*border: 1px solid red;*/
+	padding: 10px;
+	/*overflow: hidden;*/
+}
+button.loginBtn {
+    padding: 13px 18%;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background: #FF1DCE;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: bold;;
+}
+.registertext {
+    font-size: 12px;
+    font-family: cursive;
+    margin: 10px;
+}
+.formFill
+{
+	height: 13rem;
+}
+.RegisterForm
+{
+	margin: 3rem 0;
+
+}
+
+.rightpass {
+    font-size: 12px;
+    font-family: cursive;
+    color: red;
+    background: darkturquoise;
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+}
