@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+	<div class="rr">
+
+	<div class="mainDiv">
+
+		<div class="d-flex wrapper">
+			<h4 class="textfile";>Login</h4>
+			<h4 class="textfile">register</h4>
+			<h4 class="textfile">Page</h4>
+			<br>
+			
+		</div>
+		<!-- <div class="divider mw-100 w-100">
+			
+		</div> -->
+
+		<div class="formFill">
+			<div class="loginFrom" id="#logform">
+				<h4 class="rightpass">Please Enter Right Information</h4><br>
+				<input type="text" id="userLoginName" class="fullname" placeholder="Enter Your Name"  name=""><br>
+				<input type="password" id="UserLoginPass" class="fullname" placeholder="Enter Your Password" name=""><br>
+				<button class="loginBtn" id="loginbutton" onclick="golognow();" type="submit">Login</button>
+				<p class="registertext" >If Not Register Yet. <a href="#" class="registerBTN" onclick="vinish()">Register Now</a></p>
+			</div>
+
+			<div class="RegisterForm" id="regform">
+				<input type="text" id="userName" class="fullname" placeholder="Choose Your Name"  name=""><br>
+				<input type="password" id="userPass" class="fullname" placeholder="Choose Your Password" name=""><br>
+				<button class="loginBtn" id="registerbutton" onclick="loginpagenow(); emptyfi();">Register</button>
+				<p class="registertext">Goto Login Page <a href="" onclick="loginpagenow()">Now</a></p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+	<script type="text/javascript">
+
+		// function gologin(argument) {
+			
+		// 	var RegUserName = document.querySelector("#userName").value;
+		// 	var RegUserPass = document.querySelector("#userPass").value;
+		// }
+
+		function golognow(argument) {
+			
+			var usernameinput = document.querySelector("#userLoginName").value;
+			var userpassinput = document.querySelector("#UserLoginPass").value;
+
+			var pass = document.querySelector("#registerbutton").onclick=document.querySelector("#userPass").value;
+			var user = document.querySelector("#registerbutton").onclick=document.querySelector("#userName").value;
+
+			if (usernameinput==user && userpassinput==pass && usernameinput!=="") {
+
+				window.open("https://www.facebook.com");
+			}else{
+				alert("Password Wrong");
+				document.querySelector(".rightpass").style.display="inline-block"
+			}
+		}
+
+		function vinish(argument) {
+			// body...
+
+			document.getElementById("#logform").setAttribute("style","display:none; transition: .5s;")
+			document.querySelector(".RegisterForm ").setAttribute("style","margin:0")
+		}
+
+		function loginpagenow(argument) {
+			// body...
+
+			document.querySelector(".RegisterForm").setAttribute("style","display:none");
+			document.getElementById("#logform").setAttribute("style","display:block; transition: .5s;")
+		}
+
+		function emptyfi(argument) {
+			// body...
+
+
+		}
+
+ 
+		
+
+
+					
+</script>	
+</body>
+</html>
